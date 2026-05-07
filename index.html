@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amitabha Luz Infinita | Gestión de Velas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="login" class="login-page">
+    <section class="login-card">
+      <img src="logo.png" alt="Amitabha Luz Infinita" />
+      <h1>Amitabha Luz Infinita</h1>
+      <p>Sistema interno para fabricar, costear, vender y analizar velas de soya y parafina.</p>
+      <form id="loginForm">
+        <input id="email" type="email" placeholder="Correo" />
+        <input id="password" type="password" placeholder="Contraseña" />
+        <button type="submit">Entrar / crear sesión</button>
+      </form>
+      <small id="loginStatus">Modo local activo. Para nube configura Firebase gratis.</small>
+    </section>
+  </div>
+
+  <div id="app" class="app-shell hidden">
+    <aside class="sidebar">
+      <div class="brand"><img src="logo.png" alt="Logo" /><div><strong>Amitabha</strong><span>@amitabha.luzinfinita</span></div></div>
+      <nav id="nav"></nav>
+      <div class="side-footer"><small id="syncStatus">LocalStorage</small><button id="logout">Salir</button></div>
+    </aside>
+    <main>
+      <header class="topbar"><div><p>Gestión profesional de velas</p><h1 id="screenTitle">Dashboard</h1></div><span class="pill" id="pill">COP · Promedio ponderado</span></header>
+      <div class="notice" id="notice">App lista.</div>
+      <section id="content"></section>
+    </main>
+  </div>
+
+  <script src="firebase-config.js" onerror="window.AMITABHA_FIREBASE_CONFIG=null"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
