@@ -4,23 +4,67 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Amitabha Luz Infinita | Gestión de Velas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div id="login" class="login-page">
-    <section class="login-card">
-      <img src="logo.png" alt="Amitabha Luz Infinita" />
-      <h1>Amitabha Luz Infinita</h1>
-      <p>Sistema interno para fabricar, costear, vender y analizar velas de soya y parafina.</p>
-      <form id="loginForm">
-        <input id="email" type="email" placeholder="Correo" />
-        <input id="password" type="password" placeholder="Contraseña" />
-        <button type="submit">Entrar / crear sesión</button>
-      </form>
-      <div class="login-separator"><span>o</span></div>
-      <button type="button" id="googleLogin" class="google-login">Continuar con Google</button>
-      <small id="loginStatus">Modo local activo. Para nube configura Firebase gratis.</small>
-    </section>
+    <div class="login-hero">
+      <section class="login-card">
+        <span class="login-enso" aria-hidden="true">
+          <svg viewBox="0 0 120 120" fill="none">
+            <path d="M60 12c26 0 47 21 47 48 0 26-21 47-47 47S13 86 13 60c0-20 12-37 30-44" stroke="currentColor" stroke-width="5" stroke-linecap="round" opacity=".35"/>
+          </svg>
+        </span>
+        <img class="login-logo" src="logo.png" alt="Amitabha Luz Infinita" />
+        <h1>Amitabha Luz Infinita</h1>
+        <p class="login-tagline">Velas artesanales de soya y parafina</p>
+        <p>Sistema interno para fabricar, costear, vender y analizar velas de soya y parafina.</p>
+        <form id="loginForm">
+          <input id="email" type="email" placeholder="Correo" />
+          <input id="password" type="password" placeholder="Contraseña" />
+          <button type="submit">Entrar / crear sesión</button>
+        </form>
+        <div class="login-separator"><span>o</span></div>
+        <button type="button" id="googleLogin" class="google-login">Continuar con Google</button>
+        <small id="loginStatus">Modo local activo. Para nube configura Firebase gratis.</small>
+      </section>
+
+      <aside class="login-visual" aria-hidden="true">
+        <!-- 📷 REEMPLAZAR: cambia el src por tu foto real cuando la tengas (foto vertical de tus velas) -->
+        <img class="login-photo" src="https://images.unsplash.com/photo-1572726729207-a78d6feb18d7?w=1100&q=80&auto=format&fit=crop" alt="" loading="lazy" onerror="this.style.display='none'" />
+        <div class="login-visual-glow"></div>
+        <div class="login-visual-content">
+          <svg class="deco-candles" viewBox="0 0 220 150" fill="none" aria-hidden="true">
+            <!-- Ilustración decorativa: tres velas con llamas y hojas -->
+            <g opacity=".95">
+              <ellipse cx="110" cy="140" rx="92" ry="7" fill="#3d2c1e" opacity=".18"/>
+              <!-- vela central -->
+              <rect x="92" y="62" width="38" height="76" rx="7" fill="#f6e7c8"/>
+              <rect x="92" y="62" width="38" height="12" rx="6" fill="#eed9ae"/>
+              <path d="M111 50c-7-8-5-15 0-21 5 6 7 13 0 21z" fill="#f2a93b"/>
+              <path d="M111 49c-3.6-4.6-2.6-8.6 0-12 2.6 3.4 3.6 7.4 0 12z" fill="#fde4ae"/>
+              <line x1="111" y1="56" x2="111" y2="62" stroke="#7a5a36" stroke-width="2.5" stroke-linecap="round"/>
+              <!-- vela izquierda -->
+              <rect x="44" y="86" width="30" height="52" rx="6" fill="#efdcb4"/>
+              <path d="M59 76c-5.4-6.2-3.8-11.6 0-16 3.8 4.4 5.4 9.8 0 16z" fill="#f2a93b"/>
+              <line x1="59" y1="80" x2="59" y2="86" stroke="#7a5a36" stroke-width="2.2" stroke-linecap="round"/>
+              <!-- vela derecha -->
+              <rect x="148" y="94" width="26" height="44" rx="6" fill="#f3e3c2"/>
+              <path d="M161 85c-4.6-5.4-3.2-10 0-13.8 3.2 3.8 4.6 8.4 0 13.8z" fill="#f2a93b"/>
+              <line x1="161" y1="88" x2="161" y2="94" stroke="#7a5a36" stroke-width="2" stroke-linecap="round"/>
+              <!-- hojas zen -->
+              <path d="M28 132c10-14 26-18 34-16-4 12-18 22-34 16z" fill="#8a9b6e" opacity=".85"/>
+              <path d="M194 130c-9-13-23-17-31-15 4 11 17 20 31 15z" fill="#a8b58a" opacity=".8"/>
+            </g>
+          </svg>
+          <p class="login-quote">“Cada vela enciende una intención.”</p>
+          <span class="login-ig">@amitabha.luzinfinita</span>
+        </div>
+      </aside>
+    </div>
   </div>
 
   <div id="app" class="app-shell hidden">
