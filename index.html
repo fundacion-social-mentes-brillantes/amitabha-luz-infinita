@@ -6,7 +6,7 @@
   <title>Amitabha Luz Infinita | Gestión de Velas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Nunito:wght@400;600;700;800&family=Dancing+Script:wght@500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -14,8 +14,15 @@
     <div class="login-hero">
       <section class="login-card">
         <span class="login-enso" aria-hidden="true">
+          <!-- Aro floral delicado -->
           <svg viewBox="0 0 120 120" fill="none">
-            <path d="M60 12c26 0 47 21 47 48 0 26-21 47-47 47S13 86 13 60c0-20 12-37 30-44" stroke="currentColor" stroke-width="5" stroke-linecap="round" opacity=".35"/>
+            <circle cx="60" cy="60" r="44" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 14" opacity=".55"/>
+            <circle cx="60" cy="16" r="6" fill="#f4b8cd"/>
+            <circle cx="60" cy="16" r="2.4" fill="#b76e79"/>
+            <circle cx="98" cy="82" r="5" fill="#cdb8e6"/>
+            <circle cx="98" cy="82" r="2" fill="#9d86c2"/>
+            <circle cx="22" cy="82" r="5" fill="#f7cfdd"/>
+            <circle cx="22" cy="82" r="2" fill="#e0808f"/>
           </svg>
         </span>
         <img class="login-logo" src="logo.png" alt="Amitabha Luz Infinita" />
@@ -34,30 +41,47 @@
 
       <aside class="login-visual" aria-hidden="true">
         <!-- 📷 REEMPLAZAR: cambia el src por tu foto real cuando la tengas (foto vertical de tus velas) -->
-        <img class="login-photo" src="https://images.unsplash.com/photo-1572726729207-a78d6feb18d7?w=1100&q=80&auto=format&fit=crop" alt="" loading="lazy" onerror="this.style.display='none'" />
+        <img class="login-photo" src="https://images.unsplash.com/photo-1522748906645-95d8adfd52c7?w=1100&q=80&auto=format&fit=crop" alt="" loading="lazy" onerror="this.style.display='none'" />
         <div class="login-visual-glow"></div>
         <div class="login-visual-content">
           <svg class="deco-candles" viewBox="0 0 220 150" fill="none" aria-hidden="true">
-            <!-- Ilustración decorativa: tres velas con llamas y hojas -->
-            <g opacity=".95">
-              <ellipse cx="110" cy="140" rx="92" ry="7" fill="#3d2c1e" opacity=".18"/>
-              <!-- vela central -->
-              <rect x="92" y="62" width="38" height="76" rx="7" fill="#f6e7c8"/>
-              <rect x="92" y="62" width="38" height="12" rx="6" fill="#eed9ae"/>
-              <path d="M111 50c-7-8-5-15 0-21 5 6 7 13 0 21z" fill="#f2a93b"/>
-              <path d="M111 49c-3.6-4.6-2.6-8.6 0-12 2.6 3.4 3.6 7.4 0 12z" fill="#fde4ae"/>
-              <line x1="111" y1="56" x2="111" y2="62" stroke="#7a5a36" stroke-width="2.5" stroke-linecap="round"/>
-              <!-- vela izquierda -->
-              <rect x="44" y="86" width="30" height="52" rx="6" fill="#efdcb4"/>
-              <path d="M59 76c-5.4-6.2-3.8-11.6 0-16 3.8 4.4 5.4 9.8 0 16z" fill="#f2a93b"/>
-              <line x1="59" y1="80" x2="59" y2="86" stroke="#7a5a36" stroke-width="2.2" stroke-linecap="round"/>
-              <!-- vela derecha -->
-              <rect x="148" y="94" width="26" height="44" rx="6" fill="#f3e3c2"/>
-              <path d="M161 85c-4.6-5.4-3.2-10 0-13.8 3.2 3.8 4.6 8.4 0 13.8z" fill="#f2a93b"/>
-              <line x1="161" y1="88" x2="161" y2="94" stroke="#7a5a36" stroke-width="2" stroke-linecap="round"/>
-              <!-- hojas zen -->
-              <path d="M28 132c10-14 26-18 34-16-4 12-18 22-34 16z" fill="#8a9b6e" opacity=".85"/>
-              <path d="M194 130c-9-13-23-17-31-15 4 11 17 20 31 15z" fill="#a8b58a" opacity=".8"/>
+            <!-- Ilustración decorativa: velas rosas, flores, corazones y destellos -->
+            <g opacity=".97">
+              <ellipse cx="110" cy="140" rx="92" ry="7" fill="#b76e79" opacity=".16"/>
+              <!-- vela central rosa -->
+              <rect x="92" y="62" width="38" height="76" rx="9" fill="#fbe3ec"/>
+              <rect x="92" y="62" width="38" height="12" rx="6" fill="#f4b8cd"/>
+              <path d="M111 50c-7-8-5-15 0-21 5 6 7 13 0 21z" fill="#f0b46a"/>
+              <path d="M111 49c-3.6-4.6-2.6-8.6 0-12 2.6 3.4 3.6 7.4 0 12z" fill="#fdedd2"/>
+              <line x1="111" y1="56" x2="111" y2="62" stroke="#b76e79" stroke-width="2.5" stroke-linecap="round"/>
+              <!-- corazón sutil en la vela central -->
+              <path d="M111 96c-2.6-2.8-6.4-2.4-6.4.9 0 2.4 3.4 4.9 6.4 6.8 3-1.9 6.4-4.4 6.4-6.8 0-3.3-3.8-3.7-6.4-.9z" fill="#e8a8bf"/>
+              <!-- vela izquierda lila -->
+              <rect x="44" y="86" width="30" height="52" rx="7" fill="#efe4f9"/>
+              <rect x="44" y="86" width="30" height="9" rx="4.5" fill="#cdb8e6"/>
+              <path d="M59 76c-5.4-6.2-3.8-11.6 0-16 3.8 4.4 5.4 9.8 0 16z" fill="#f0b46a"/>
+              <line x1="59" y1="80" x2="59" y2="86" stroke="#9d86c2" stroke-width="2.2" stroke-linecap="round"/>
+              <!-- vela derecha rosada -->
+              <rect x="148" y="94" width="26" height="44" rx="6" fill="#fdeef4"/>
+              <rect x="148" y="94" width="26" height="8" rx="4" fill="#f7cfdd"/>
+              <path d="M161 85c-4.6-5.4-3.2-10 0-13.8 3.2 3.8 4.6 8.4 0 13.8z" fill="#f0b46a"/>
+              <line x1="161" y1="88" x2="161" y2="94" stroke="#b76e79" stroke-width="2" stroke-linecap="round"/>
+              <!-- flores tipo peonía -->
+              <g transform="translate(30 124)">
+                <circle r="7.5" fill="#f4b8cd"/><circle r="3" fill="#fdeef4"/>
+                <circle cx="11" cy="5" r="5.5" fill="#e8a8bf"/><circle cx="11" cy="5" r="2.2" fill="#fdeef4"/>
+              </g>
+              <g transform="translate(192 126)">
+                <circle r="7" fill="#cdb8e6"/><circle r="2.8" fill="#f6f0fd"/>
+                <circle cx="-10" cy="6" r="5" fill="#f7cfdd"/><circle cx="-10" cy="6" r="2" fill="#fff"/>
+              </g>
+              <path d="M14 136c8-10 20-13 27-11-3 9-14 17-27 11z" fill="#bcd3ae" opacity=".9"/>
+              <path d="M208 134c-7-9-18-12-24-10 3 8 12 15 24 10z" fill="#cbdec0" opacity=".85"/>
+              <!-- destellos -->
+              <path d="M84 34l2.2 5.4 5.4 2.2-5.4 2.2-2.2 5.4-2.2-5.4-5.4-2.2 5.4-2.2z" fill="#f7cfdd"/>
+              <path d="M140 28l1.7 4.1 4.1 1.7-4.1 1.7-1.7 4.1-1.7-4.1-4.1-1.7 4.1-1.7z" fill="#cdb8e6"/>
+              <circle cx="166" cy="62" r="2.2" fill="#f4b8cd"/>
+              <circle cx="52" cy="60" r="2" fill="#cdb8e6"/>
             </g>
           </svg>
           <p class="login-quote">“Cada vela enciende una intención.”</p>
