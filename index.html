@@ -33,8 +33,8 @@
         <p class="login-tagline">Velas artesanales de soya y parafina</p>
         <p>Sistema interno para fabricar, costear, vender y analizar velas de soya y parafina.</p>
         <form id="loginForm">
-          <input id="email" type="email" placeholder="Correo" />
-          <input id="password" type="password" placeholder="Contraseña" />
+          <label class="login-field"><span>Correo</span><input id="email" type="email" autocomplete="email" placeholder="tucorreo@ejemplo.com" /></label>
+          <label class="login-field"><span>Contraseña</span><input id="password" type="password" autocomplete="current-password" placeholder="Tu contraseña" /></label>
           <button type="submit">Entrar / crear sesión</button>
         </form>
         <div class="login-separator"><span>o</span></div>
@@ -98,14 +98,24 @@
     <aside class="sidebar">
       <div class="brand"><img src="logo.png" alt="Logo" /><div><strong>Amitabha</strong><span>@amitabha.luzinfinita</span></div></div>
       <nav id="nav"></nav>
-      <div class="side-footer"><small id="syncStatus">LocalStorage</small><button id="logout">Salir</button></div>
+      <div class="side-footer"><small id="syncStatus">💾 Guardado local</small><button id="logout">Salir</button></div>
     </aside>
     <main>
-      <header class="topbar"><div><p>Gestión profesional de velas</p><h1 id="screenTitle">Dashboard</h1></div><span class="pill" id="pill">COP · Promedio ponderado</span></header>
-      <div class="notice" id="notice">App lista.</div>
+      <header class="topbar">
+        <div>
+          <p class="topbar-eyebrow">Gestión profesional de velas</p>
+          <h1 id="screenTitle">Dashboard</h1>
+          <p class="topbar-tip" id="screenTip"></p>
+        </div>
+        <div class="topbar-side">
+          <span class="pill" id="pill">COP · Promedio ponderado</span>
+          <span id="todayChip"></span>
+        </div>
+      </header>
       <section id="content"></section>
     </main>
   </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
   <script src="firebase-config.js" onerror="window.AMITABHA_FIREBASE_CONFIG=null"></script>
   <script type="module" src="app.js"></script>
